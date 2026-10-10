@@ -1,0 +1,1535 @@
+{
+  "note": "Exact two-sided McNemar per cell from flip counts; Bonferroni over the 49-cell family per shuffle; pooled counts are descriptive (exchangeability of measurements not verified); exact two-sided Fisher tests in integer arithmetic. The Linear-Statistics pair was selected after viewing the tensor.",
+  "inputs": {
+    "s17": "results/probes/s17_transfer.json",
+    "s23": "results/probes/s23_transfer_partial.json"
+  },
+  "sources": [
+    "Integral",
+    "Differential",
+    "Abstract",
+    "Linear",
+    "Statistics",
+    "algorithmic",
+    "generic"
+  ],
+  "s0_accuracy": [
+    0.375,
+    0.4625,
+    0.35,
+    0.3875,
+    0.2,
+    0.3625,
+    0.2
+  ],
+  "family_size": 49,
+  "alpha": 0.05,
+  "shuffles": {
+    "s17": {
+      "rows": [
+        "Integral",
+        "Differential",
+        "Abstract",
+        "Linear",
+        "Statistics",
+        "algorithmic",
+        "generic"
+      ],
+      "cells_measured": 49,
+      "cells": [
+        {
+          "train": "Integral",
+          "scored": "Integral",
+          "gained": 17,
+          "lost": 8,
+          "p": 0.10775214433670044,
+          "p_exact": "1807781/16777216",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Differential",
+          "gained": 17,
+          "lost": 17,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Abstract",
+          "gained": 22,
+          "lost": 10,
+          "p": 0.050102459732443094,
+          "p_exact": "107594213/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Linear",
+          "gained": 18,
+          "lost": 9,
+          "p": 0.12207812070846558,
+          "p_exact": "2048131/16777216",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Statistics",
+          "gained": 14,
+          "lost": 5,
+          "p": 0.063568115234375,
+          "p_exact": "2083/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "algorithmic",
+          "gained": 7,
+          "lost": 15,
+          "p": 0.13380050659179688,
+          "p_exact": "35075/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "generic",
+          "gained": 7,
+          "lost": 7,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Integral",
+          "gained": 16,
+          "lost": 7,
+          "p": 0.0931396484375,
+          "p_exact": "763/8192",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Differential",
+          "gained": 19,
+          "lost": 9,
+          "p": 0.08715855330228806,
+          "p_exact": "11698223/134217728",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Abstract",
+          "gained": 23,
+          "lost": 12,
+          "p": 0.0895310789346695,
+          "p_exact": "6008329/67108864",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Linear",
+          "gained": 19,
+          "lost": 12,
+          "p": 0.28104151505976915,
+          "p_exact": "301766029/1073741824",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Statistics",
+          "gained": 12,
+          "lost": 7,
+          "p": 0.359283447265625,
+          "p_exact": "11773/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "algorithmic",
+          "gained": 5,
+          "lost": 10,
+          "p": 0.3017578125,
+          "p_exact": "309/1024",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "generic",
+          "gained": 11,
+          "lost": 8,
+          "p": 0.6476058959960938,
+          "p_exact": "84883/131072",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Integral",
+          "gained": 17,
+          "lost": 9,
+          "p": 0.16863754391670227,
+          "p_exact": "5658537/33554432",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Differential",
+          "gained": 14,
+          "lost": 11,
+          "p": 0.6900379657745361,
+          "p_exact": "2894229/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Abstract",
+          "gained": 21,
+          "lost": 9,
+          "p": 0.04277394525706768,
+          "p_exact": "22964087/536870912",
+          "p_bonf": 1.0,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Linear",
+          "gained": 15,
+          "lost": 13,
+          "p": 0.8505540192127228,
+          "p_exact": "28539857/33554432",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Statistics",
+          "gained": 11,
+          "lost": 4,
+          "p": 0.11846923828125,
+          "p_exact": "1941/16384",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "algorithmic",
+          "gained": 6,
+          "lost": 8,
+          "p": 0.79052734375,
+          "p_exact": "1619/2048",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "generic",
+          "gained": 5,
+          "lost": 7,
+          "p": 0.7744140625,
+          "p_exact": "793/1024",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Integral",
+          "gained": 21,
+          "lost": 6,
+          "p": 0.005924612283706665,
+          "p_exact": "198797/33554432",
+          "p_bonf": 0.2903060019016266,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Differential",
+          "gained": 18,
+          "lost": 11,
+          "p": 0.26493089646101,
+          "p_exact": "35558423/134217728",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Abstract",
+          "gained": 19,
+          "lost": 8,
+          "p": 0.052238985896110535,
+          "p_exact": "3505699/67108864",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Linear",
+          "gained": 16,
+          "lost": 10,
+          "p": 0.32693958282470703,
+          "p_exact": "342821/1048576",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Statistics",
+          "gained": 16,
+          "lost": 3,
+          "p": 0.004425048828125,
+          "p_exact": "145/32768",
+          "p_bonf": 0.216827392578125,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "algorithmic",
+          "gained": 9,
+          "lost": 13,
+          "p": 0.5234670639038086,
+          "p_exact": "548895/1048576",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "generic",
+          "gained": 4,
+          "lost": 8,
+          "p": 0.3876953125,
+          "p_exact": "397/1024",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Integral",
+          "gained": 16,
+          "lost": 6,
+          "p": 0.052478790283203125,
+          "p_exact": "13757/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Differential",
+          "gained": 21,
+          "lost": 13,
+          "p": 0.22948101302608848,
+          "p_exact": "492806723/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Abstract",
+          "gained": 20,
+          "lost": 13,
+          "p": 0.296206368599087,
+          "p_exact": "636098333/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Linear",
+          "gained": 22,
+          "lost": 8,
+          "p": 0.016124801710247993,
+          "p_exact": "8656937/536870912",
+          "p_bonf": 0.7901152838021517,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Statistics",
+          "gained": 18,
+          "lost": 4,
+          "p": 0.004343509674072266,
+          "p_exact": "9109/2097152",
+          "p_bonf": 0.21283197402954102,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "algorithmic",
+          "gained": 10,
+          "lost": 12,
+          "p": 0.8318119049072266,
+          "p_exact": "436109/524288",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "generic",
+          "gained": 7,
+          "lost": 9,
+          "p": 0.803619384765625,
+          "p_exact": "26333/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Integral",
+          "gained": 12,
+          "lost": 9,
+          "p": 0.6636238098144531,
+          "p_exact": "173965/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Differential",
+          "gained": 9,
+          "lost": 10,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Abstract",
+          "gained": 23,
+          "lost": 12,
+          "p": 0.0895310789346695,
+          "p_exact": "6008329/67108864",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Linear",
+          "gained": 14,
+          "lost": 8,
+          "p": 0.28627872467041016,
+          "p_exact": "300185/1048576",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Statistics",
+          "gained": 10,
+          "lost": 8,
+          "p": 0.8145294189453125,
+          "p_exact": "53381/65536",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "algorithmic",
+          "gained": 15,
+          "lost": 8,
+          "p": 0.21003961563110352,
+          "p_exact": "440485/2097152",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "generic",
+          "gained": 15,
+          "lost": 6,
+          "p": 0.0783538818359375,
+          "p_exact": "5135/65536",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "Integral",
+          "gained": 15,
+          "lost": 9,
+          "p": 0.30745625495910645,
+          "p_exact": "1289565/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "Differential",
+          "gained": 20,
+          "lost": 12,
+          "p": 0.21532714972272515,
+          "p_exact": "462411533/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "Abstract",
+          "gained": 14,
+          "lost": 9,
+          "p": 0.4048728942871094,
+          "p_exact": "106135/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "Linear",
+          "gained": 16,
+          "lost": 9,
+          "p": 0.2295229434967041,
+          "p_exact": "962689/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "Statistics",
+          "gained": 12,
+          "lost": 4,
+          "p": 0.076812744140625,
+          "p_exact": "2517/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "algorithmic",
+          "gained": 12,
+          "lost": 9,
+          "p": 0.6636238098144531,
+          "p_exact": "173965/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "generic",
+          "scored": "generic",
+          "gained": 13,
+          "lost": 7,
+          "p": 0.26317596435546875,
+          "p_exact": "34495/131072",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        }
+      ],
+      "nominal_cells": [
+        "Abstract->Abstract",
+        "Linear->Integral",
+        "Linear->Statistics",
+        "Statistics->Linear",
+        "Statistics->Statistics"
+      ],
+      "n_nominal": 5,
+      "bonferroni_cells": [],
+      "n_bonferroni": 0,
+      "expected_nominal_under_null": {
+        "upper_bound_alpha_times_cells": 2.45,
+        "upper_bound_alpha_times_family": 2.45,
+        "exact_test_at_observed_discordant_counts": 1.3536445586942136
+      }
+    },
+    "s23": {
+      "rows": [
+        "Integral",
+        "Differential",
+        "Abstract",
+        "Linear",
+        "Statistics",
+        "algorithmic"
+      ],
+      "cells_measured": 42,
+      "cells": [
+        {
+          "train": "Integral",
+          "scored": "Integral",
+          "gained": 14,
+          "lost": 11,
+          "p": 0.6900379657745361,
+          "p_exact": "2894229/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Differential",
+          "gained": 16,
+          "lost": 12,
+          "p": 0.5715881884098053,
+          "p_exact": "19179317/33554432",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Abstract",
+          "gained": 17,
+          "lost": 11,
+          "p": 0.34492845088243484,
+          "p_exact": "46295513/134217728",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Linear",
+          "gained": 15,
+          "lost": 11,
+          "p": 0.557197093963623,
+          "p_exact": "1168527/2097152",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "Statistics",
+          "gained": 8,
+          "lost": 4,
+          "p": 0.3876953125,
+          "p_exact": "397/1024",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "algorithmic",
+          "gained": 8,
+          "lost": 13,
+          "p": 0.38331031799316406,
+          "p_exact": "200965/524288",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Integral",
+          "scored": "generic",
+          "gained": 6,
+          "lost": 6,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Integral",
+          "gained": 11,
+          "lost": 5,
+          "p": 0.210113525390625,
+          "p_exact": "6885/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Differential",
+          "gained": 19,
+          "lost": 11,
+          "p": 0.20048842206597328,
+          "p_exact": "53818201/268435456",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Abstract",
+          "gained": 17,
+          "lost": 11,
+          "p": 0.34492845088243484,
+          "p_exact": "46295513/134217728",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Linear",
+          "gained": 16,
+          "lost": 10,
+          "p": 0.32693958282470703,
+          "p_exact": "342821/1048576",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "Statistics",
+          "gained": 20,
+          "lost": 1,
+          "p": 2.09808349609375e-05,
+          "p_exact": "11/524288",
+          "p_bonf": 0.0010280609130859375,
+          "nominal": true,
+          "bonferroni": true
+        },
+        {
+          "train": "Differential",
+          "scored": "algorithmic",
+          "gained": 6,
+          "lost": 7,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Differential",
+          "scored": "generic",
+          "gained": 9,
+          "lost": 8,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Integral",
+          "gained": 12,
+          "lost": 10,
+          "p": 0.8318119049072266,
+          "p_exact": "436109/524288",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Differential",
+          "gained": 21,
+          "lost": 12,
+          "p": 0.16275565745308995,
+          "p_exact": "349515113/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Abstract",
+          "gained": 20,
+          "lost": 15,
+          "p": 0.49955983320251107,
+          "p_exact": "1072796573/2147483648",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Linear",
+          "gained": 14,
+          "lost": 9,
+          "p": 0.4048728942871094,
+          "p_exact": "106135/262144",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "Statistics",
+          "gained": 16,
+          "lost": 8,
+          "p": 0.15158963203430176,
+          "p_exact": "635813/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "algorithmic",
+          "gained": 4,
+          "lost": 6,
+          "p": 0.75390625,
+          "p_exact": "193/256",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Abstract",
+          "scored": "generic",
+          "gained": 8,
+          "lost": 8,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Integral",
+          "gained": 17,
+          "lost": 10,
+          "p": 0.24778856337070465,
+          "p_exact": "16628809/67108864",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Differential",
+          "gained": 21,
+          "lost": 14,
+          "p": 0.31050465907901525,
+          "p_exact": "333401839/1073741824",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Abstract",
+          "gained": 18,
+          "lost": 12,
+          "p": 0.361594608053565,
+          "p_exact": "194129627/536870912",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Linear",
+          "gained": 24,
+          "lost": 8,
+          "p": 0.0070003666914999485,
+          "p_exact": "15033173/2147483648",
+          "p_bonf": 0.3430179678834975,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "Statistics",
+          "gained": 14,
+          "lost": 4,
+          "p": 0.0308837890625,
+          "p_exact": "253/8192",
+          "p_bonf": 1.0,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "algorithmic",
+          "gained": 6,
+          "lost": 10,
+          "p": 0.454498291015625,
+          "p_exact": "14893/32768",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Linear",
+          "scored": "generic",
+          "gained": 5,
+          "lost": 8,
+          "p": 0.5810546875,
+          "p_exact": "595/1024",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Integral",
+          "gained": 14,
+          "lost": 10,
+          "p": 0.5412561893463135,
+          "p_exact": "2270193/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Differential",
+          "gained": 13,
+          "lost": 10,
+          "p": 0.6776394844055176,
+          "p_exact": "1421113/2097152",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Abstract",
+          "gained": 23,
+          "lost": 10,
+          "p": 0.03508203336969018,
+          "p_exact": "75338093/2147483648",
+          "p_bonf": 1.0,
+          "nominal": true,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Linear",
+          "gained": 19,
+          "lost": 8,
+          "p": 0.052238985896110535,
+          "p_exact": "3505699/67108864",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "Statistics",
+          "gained": 13,
+          "lost": 6,
+          "p": 0.1670684814453125,
+          "p_exact": "10949/65536",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "algorithmic",
+          "gained": 8,
+          "lost": 9,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "Statistics",
+          "scored": "generic",
+          "gained": 8,
+          "lost": 9,
+          "p": 1.0,
+          "p_exact": "1/1",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Integral",
+          "gained": 16,
+          "lost": 12,
+          "p": 0.5715881884098053,
+          "p_exact": "19179317/33554432",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Differential",
+          "gained": 15,
+          "lost": 10,
+          "p": 0.42435622215270996,
+          "p_exact": "1779879/4194304",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Abstract",
+          "gained": 18,
+          "lost": 9,
+          "p": 0.12207812070846558,
+          "p_exact": "2048131/16777216",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Linear",
+          "gained": 9,
+          "lost": 6,
+          "p": 0.60723876953125,
+          "p_exact": "9949/16384",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "Statistics",
+          "gained": 4,
+          "lost": 6,
+          "p": 0.75390625,
+          "p_exact": "193/256",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "algorithmic",
+          "gained": 14,
+          "lost": 7,
+          "p": 0.18924713134765625,
+          "p_exact": "24805/131072",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        },
+        {
+          "train": "algorithmic",
+          "scored": "generic",
+          "gained": 17,
+          "lost": 7,
+          "p": 0.06391465663909912,
+          "p_exact": "536155/8388608",
+          "p_bonf": 1.0,
+          "nominal": false,
+          "bonferroni": false
+        }
+      ],
+      "nominal_cells": [
+        "Differential->Statistics",
+        "Linear->Linear",
+        "Linear->Statistics",
+        "Statistics->Abstract"
+      ],
+      "n_nominal": 4,
+      "bonferroni_cells": [
+        "Differential->Statistics"
+      ],
+      "n_bonferroni": 1,
+      "expected_nominal_under_null": {
+        "upper_bound_alpha_times_cells": 2.1,
+        "upper_bound_alpha_times_family": 2.45,
+        "exact_test_at_observed_discordant_counts": 1.2977321376092732
+      }
+    }
+  },
+  "bonferroni_in_both_shuffles": [],
+  "table_cells": [
+    {
+      "cell": "Linear->Statistics",
+      "s17": {
+        "gained": 16,
+        "lost": 3,
+        "p": 0.004425048828125,
+        "p_bonf": 0.216827392578125
+      },
+      "s23": {
+        "gained": 14,
+        "lost": 4,
+        "p": 0.0308837890625,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Statistics->Statistics",
+      "s17": {
+        "gained": 18,
+        "lost": 4,
+        "p": 0.004343509674072266,
+        "p_bonf": 0.21283197402954102
+      },
+      "s23": {
+        "gained": 13,
+        "lost": 6,
+        "p": 0.1670684814453125,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Linear->Integral",
+      "s17": {
+        "gained": 21,
+        "lost": 6,
+        "p": 0.005924612283706665,
+        "p_bonf": 0.2903060019016266
+      },
+      "s23": {
+        "gained": 17,
+        "lost": 10,
+        "p": 0.24778856337070465,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Statistics->Linear",
+      "s17": {
+        "gained": 22,
+        "lost": 8,
+        "p": 0.016124801710247993,
+        "p_bonf": 0.7901152838021517
+      },
+      "s23": {
+        "gained": 19,
+        "lost": 8,
+        "p": 0.052238985896110535,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Abstract->Abstract",
+      "s17": {
+        "gained": 21,
+        "lost": 9,
+        "p": 0.04277394525706768,
+        "p_bonf": 1.0
+      },
+      "s23": {
+        "gained": 20,
+        "lost": 15,
+        "p": 0.49955983320251107,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Integral->Abstract",
+      "s17": {
+        "gained": 22,
+        "lost": 10,
+        "p": 0.050102459732443094,
+        "p_bonf": 1.0
+      },
+      "s23": {
+        "gained": 17,
+        "lost": 11,
+        "p": 0.34492845088243484,
+        "p_bonf": 1.0
+      }
+    },
+    {
+      "cell": "Differential->Statistics",
+      "s17": {
+        "gained": 12,
+        "lost": 7,
+        "p": 0.359283447265625,
+        "p_bonf": 1.0
+      },
+      "s23": {
+        "gained": 20,
+        "lost": 1,
+        "p": 2.09808349609375e-05,
+        "p_bonf": 0.0010280609130859375
+      }
+    },
+    {
+      "cell": "Linear->Linear",
+      "s17": {
+        "gained": 16,
+        "lost": 10,
+        "p": 0.32693958282470703,
+        "p_bonf": 1.0
+      },
+      "s23": {
+        "gained": 24,
+        "lost": 8,
+        "p": 0.0070003666914999485,
+        "p_bonf": 0.3430179678834975
+      }
+    },
+    {
+      "cell": "Statistics->Abstract",
+      "s17": {
+        "gained": 20,
+        "lost": 13,
+        "p": 0.296206368599087,
+        "p_bonf": 1.0
+      },
+      "s23": {
+        "gained": 23,
+        "lost": 10,
+        "p": 0.03508203336969018,
+        "p_bonf": 1.0
+      }
+    }
+  ],
+  "statistics_column": {
+    "target": "Statistics",
+    "s0_accuracy": 0.2,
+    "donors": [
+      "Integral",
+      "Differential",
+      "Abstract",
+      "Linear"
+    ],
+    "measurements": [
+      "s17 Integral->Statistics",
+      "s17 Differential->Statistics",
+      "s17 Abstract->Statistics",
+      "s17 Linear->Statistics",
+      "s23 Integral->Statistics",
+      "s23 Differential->Statistics",
+      "s23 Abstract->Statistics",
+      "s23 Linear->Statistics"
+    ],
+    "pooled": [
+      111,
+      36
+    ],
+    "p_nominal_if_exchangeable": 4.3177702752818636e-10,
+    "p_exact": "2407237368371256729894704735267809/5575186299632655785383929568162090376495104",
+    "per_donor": {
+      "Integral": {
+        "s17": [
+          14,
+          5
+        ],
+        "s23": [
+          8,
+          4
+        ],
+        "pooled": [
+          22,
+          9
+        ],
+        "gains_exceed_losses_in_every_shuffle": true
+      },
+      "Differential": {
+        "s17": [
+          12,
+          7
+        ],
+        "s23": [
+          20,
+          1
+        ],
+        "pooled": [
+          32,
+          8
+        ],
+        "gains_exceed_losses_in_every_shuffle": true
+      },
+      "Abstract": {
+        "s17": [
+          11,
+          4
+        ],
+        "s23": [
+          16,
+          8
+        ],
+        "pooled": [
+          27,
+          12
+        ],
+        "gains_exceed_losses_in_every_shuffle": true
+      },
+      "Linear": {
+        "s17": [
+          16,
+          3
+        ],
+        "s23": [
+          14,
+          4
+        ],
+        "pooled": [
+          30,
+          7
+        ],
+        "gains_exceed_losses_in_every_shuffle": true
+      }
+    },
+    "strongest_donor_by_net_gain": {
+      "s17": {
+        "donor": "Linear",
+        "gained": 16,
+        "lost": 3,
+        "p": 0.004425048828125
+      },
+      "s23": {
+        "donor": "Differential",
+        "gained": 20,
+        "lost": 1,
+        "p": 2.09808349609375e-05
+      }
+    }
+  },
+  "generic_column": {
+    "target": "generic",
+    "s0_accuracy": 0.2,
+    "donors": [
+      "Integral",
+      "Differential",
+      "Abstract",
+      "Linear"
+    ],
+    "measurements": [
+      "s17 Integral->generic",
+      "s17 Differential->generic",
+      "s17 Abstract->generic",
+      "s17 Linear->generic",
+      "s23 Integral->generic",
+      "s23 Differential->generic",
+      "s23 Abstract->generic",
+      "s23 Linear->generic"
+    ],
+    "pooled": [
+      55,
+      60
+    ],
+    "p_nominal_if_exchangeable": 0.7093227303228257,
+    "p_exact": "460376773042819277505596338305617/649037107316853453566312041152512",
+    "per_donor": {
+      "Integral": {
+        "s17": [
+          7,
+          7
+        ],
+        "s23": [
+          6,
+          6
+        ],
+        "pooled": [
+          13,
+          13
+        ],
+        "gains_exceed_losses_in_every_shuffle": false
+      },
+      "Differential": {
+        "s17": [
+          11,
+          8
+        ],
+        "s23": [
+          9,
+          8
+        ],
+        "pooled": [
+          20,
+          16
+        ],
+        "gains_exceed_losses_in_every_shuffle": true
+      },
+      "Abstract": {
+        "s17": [
+          5,
+          7
+        ],
+        "s23": [
+          8,
+          8
+        ],
+        "pooled": [
+          13,
+          15
+        ],
+        "gains_exceed_losses_in_every_shuffle": false
+      },
+      "Linear": {
+        "s17": [
+          4,
+          8
+        ],
+        "s23": [
+          5,
+          8
+        ],
+        "pooled": [
+          9,
+          16
+        ],
+        "gains_exceed_losses_in_every_shuffle": false
+      }
+    },
+    "strongest_donor_by_net_gain": {
+      "s17": {
+        "donor": "Differential",
+        "gained": 11,
+        "lost": 8,
+        "p": 0.6476058959960938
+      },
+      "s23": {
+        "donor": "Differential",
+        "gained": 9,
+        "lost": 8,
+        "p": 1.0
+      }
+    }
+  },
+  "pairs": {
+    "Linear-Statistics": {
+      "sources": [
+        "Linear",
+        "Statistics"
+      ],
+      "measurements": [
+        "s17 Linear->Statistics",
+        "s17 Statistics->Linear",
+        "s23 Linear->Statistics",
+        "s23 Statistics->Linear"
+      ],
+      "gained": 71,
+      "lost": 23,
+      "positive_fraction": 0.7553191489361702
+    },
+    "Abstract-Linear": {
+      "sources": [
+        "Abstract",
+        "Linear"
+      ],
+      "measurements": [
+        "s17 Abstract->Linear",
+        "s17 Linear->Abstract",
+        "s23 Abstract->Linear",
+        "s23 Linear->Abstract"
+      ],
+      "gained": 66,
+      "lost": 42,
+      "positive_fraction": 0.6111111111111112
+    },
+    "Integral-Differential": {
+      "sources": [
+        "Integral",
+        "Differential"
+      ],
+      "measurements": [
+        "s17 Integral->Differential",
+        "s17 Differential->Integral",
+        "s23 Integral->Differential",
+        "s23 Differential->Integral"
+      ],
+      "gained": 60,
+      "lost": 41,
+      "positive_fraction": 0.594059405940594
+    },
+    "algorithmic-generic": {
+      "sources": [
+        "algorithmic",
+        "generic"
+      ],
+      "measurements": [
+        "s17 algorithmic->generic",
+        "s17 generic->algorithmic",
+        "s23 algorithmic->generic"
+      ],
+      "gained": 44,
+      "lost": 22,
+      "positive_fraction": 0.6666666666666666
+    }
+  },
+  "fisher_vs_linear_statistics": {
+    "Abstract-Linear": {
+      "table": [
+        [
+          71,
+          23
+        ],
+        [
+          66,
+          42
+        ]
+      ],
+      "p": 0.03463257733379156,
+      "p_exact": "99188657054723216593056196399267/2864027591672862835692268993186705"
+    },
+    "Integral-Differential": {
+      "table": [
+        [
+          71,
+          23
+        ],
+        [
+          60,
+          41
+        ]
+      ],
+      "p": 0.021830509807535717,
+      "p_exact": "6415820091849785728695233114806/293892362038888149427846651850635"
+    },
+    "algorithmic-generic": {
+      "table": [
+        [
+          71,
+          23
+        ],
+        [
+          44,
+          22
+        ]
+      ],
+      "p": 0.2838829075678559,
+      "p_exact": "126649729119024598643/446133690133323047450"
+    }
+  }
+}

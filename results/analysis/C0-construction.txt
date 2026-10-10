@@ -1,0 +1,20 @@
+1. 标签树的覆盖切分
+  M=2：1 个  algorithmic+generic | Integral+Differential+Abstract+Linear+Statistics
+  M=3：1 个  algorithmic | generic | Integral+Differential+Abstract+Linear+Statistics
+  M=4：1 个  Abstract+Linear | Integral+Differential | algorithmic+generic | Statistics
+  M=5：3 个  Abstract+Linear | Integral+Differential | Statistics | algorithmic | generic；Abstract+Linear | algorithmic+generic | Integral | Differential | Statistics；Integral+Differential | algorithmic+generic | Abstract | Linear | Statistics
+  M=6：3 个  Abstract+Linear | Integral | Differential | Statistics | algorithmic | generic；Integral+Differential | Abstract | Linear | Statistics | algorithmic | generic；algorithmic+generic | Integral | Differential | Abstract | Linear | Statistics
+  M=7：1 个  Integral | Differential | Abstract | Linear | Statistics | algorithmic | generic
+
+2. 硬标签映射 [1, 1, 0, 0, 3, 2, 2] 经 Sinkhorn 配平（η=0）与整数取整
+  连续目标 ×56：[[0.0, 0.0, 7.0, 7.0, 0.0, 0.0, 0.0], [7.0, 7.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 7.0, 7.0], [1.0, 1.0, 1.0, 1.0, 8.0, 1.0, 1.0]]
+  整数块矩阵：[[0, 0, 7, 7, 0, 0, 0], [7, 7, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 7, 7], [1, 1, 1, 1, 8, 1, 1]]  与 C0 相同
+
+3. 树距离运输问题（代价 × 56 块）
+  LP 最优代价 20；C0 的代价 20；并列最优
+  LP 顶点 ×56：[[0.0, 0.0, 6.0, 8.0, 0.0, 0.0, 0.0], [6.0, 8.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 8.0, 6.0], [2.0, 0.0, 2.0, 0.0, 8.0, 0.0, 2.0]]  ≠ C0
+
+4. 开发期加性代理（s17，代理内按能力路由）
+  树距离 LP 顶点 0.4348（= allocation_sweep 的语义基线 0.4348）；C0 0.4336
+
+写入 results/analysis/C0-construction.json 与 results/analysis/C0-construction.txt

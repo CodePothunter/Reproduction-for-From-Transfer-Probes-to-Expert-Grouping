@@ -1,0 +1,269 @@
+{
+  "note": "Counts from the data manifest built by pipeline/build_manifest_7src.py. The manifest itself (problem text and reference solutions) is not included.",
+  "sha256": "f38f2fb97f2171f22b4756bd2f85e5629fda3403c6470ccd1c7ae5188186e8c3",
+  "header": {
+    "dataset_revisions": {
+      "zwhe99/DeepMath-103K": "main",
+      "nvidia/OpenCodeInstruct": "main",
+      "evalplus/mbppplus": "main"
+    },
+    "code_shards": [
+      45,
+      48,
+      49
+    ],
+    "tokenizer": {
+      "id": "Qwen/Qwen3.5-2B-Base",
+      "revision": "main"
+    },
+    "sources": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "split_salt": "7src-2026-09-18"
+  },
+  "sources": [
+    "Integral",
+    "Differential",
+    "Abstract",
+    "Linear",
+    "Statistics",
+    "algorithmic",
+    "generic"
+  ],
+  "split_counts": {
+    "Integral": {
+      "audit": 1733,
+      "feedback": 2114,
+      "route": 1025,
+      "test": 1048,
+      "train": 11424
+    },
+    "Differential": {
+      "audit": 1013,
+      "feedback": 1189,
+      "route": 573,
+      "test": 608,
+      "train": 6854
+    },
+    "Abstract": {
+      "audit": 985,
+      "feedback": 1183,
+      "route": 588,
+      "test": 590,
+      "train": 6705
+    },
+    "Linear": {
+      "audit": 645,
+      "feedback": 795,
+      "route": 356,
+      "test": 423,
+      "train": 4107
+    },
+    "Statistics": {
+      "audit": 639,
+      "feedback": 819,
+      "route": 419,
+      "test": 421,
+      "train": 4664
+    },
+    "algorithmic": {
+      "audit": 1283,
+      "feedback": 1568,
+      "route": 825,
+      "test": 1144,
+      "train": 8533
+    },
+    "generic": {
+      "audit": 9426,
+      "feedback": 11369,
+      "route": 5695,
+      "test": 5495,
+      "train": 61950
+    }
+  },
+  "split_fraction_all_records": {
+    "audit": 0.09938814724919094,
+    "feedback": 0.12032893406148867,
+    "route": 0.05992743729773463,
+    "test": 0.06149499393203883,
+    "train": 0.658860487459547
+  },
+  "split_counts_by_dataset": {
+    "Integral": {
+      "audit": {
+        "zwhe99/DeepMath-103K": 1733
+      },
+      "feedback": {
+        "zwhe99/DeepMath-103K": 2114
+      },
+      "route": {
+        "zwhe99/DeepMath-103K": 1025
+      },
+      "test": {
+        "zwhe99/DeepMath-103K": 1048
+      },
+      "train": {
+        "zwhe99/DeepMath-103K": 11424
+      }
+    },
+    "Differential": {
+      "audit": {
+        "zwhe99/DeepMath-103K": 1013
+      },
+      "feedback": {
+        "zwhe99/DeepMath-103K": 1189
+      },
+      "route": {
+        "zwhe99/DeepMath-103K": 573
+      },
+      "test": {
+        "zwhe99/DeepMath-103K": 608
+      },
+      "train": {
+        "zwhe99/DeepMath-103K": 6854
+      }
+    },
+    "Abstract": {
+      "audit": {
+        "zwhe99/DeepMath-103K": 985
+      },
+      "feedback": {
+        "zwhe99/DeepMath-103K": 1183
+      },
+      "route": {
+        "zwhe99/DeepMath-103K": 588
+      },
+      "test": {
+        "zwhe99/DeepMath-103K": 590
+      },
+      "train": {
+        "zwhe99/DeepMath-103K": 6705
+      }
+    },
+    "Linear": {
+      "audit": {
+        "zwhe99/DeepMath-103K": 645
+      },
+      "feedback": {
+        "zwhe99/DeepMath-103K": 795
+      },
+      "route": {
+        "zwhe99/DeepMath-103K": 356
+      },
+      "test": {
+        "zwhe99/DeepMath-103K": 423
+      },
+      "train": {
+        "zwhe99/DeepMath-103K": 4107
+      }
+    },
+    "Statistics": {
+      "audit": {
+        "zwhe99/DeepMath-103K": 639
+      },
+      "feedback": {
+        "zwhe99/DeepMath-103K": 819
+      },
+      "route": {
+        "zwhe99/DeepMath-103K": 419
+      },
+      "test": {
+        "zwhe99/DeepMath-103K": 421
+      },
+      "train": {
+        "zwhe99/DeepMath-103K": 4664
+      }
+    },
+    "algorithmic": {
+      "audit": {
+        "nvidia/OpenCodeInstruct": 1283
+      },
+      "feedback": {
+        "nvidia/OpenCodeInstruct": 1568
+      },
+      "route": {
+        "nvidia/OpenCodeInstruct": 825
+      },
+      "test": {
+        "nvidia/OpenCodeInstruct": 768,
+        "evalplus/mbppplus": 376
+      },
+      "train": {
+        "nvidia/OpenCodeInstruct": 8533
+      }
+    },
+    "generic": {
+      "audit": {
+        "nvidia/OpenCodeInstruct": 9426
+      },
+      "feedback": {
+        "nvidia/OpenCodeInstruct": 11369
+      },
+      "route": {
+        "nvidia/OpenCodeInstruct": 5695
+      },
+      "test": {
+        "nvidia/OpenCodeInstruct": 5495
+      },
+      "train": {
+        "nvidia/OpenCodeInstruct": 61950
+      }
+    }
+  },
+  "test_by_dataset": {
+    "Integral": {
+      "zwhe99/DeepMath-103K": 1048
+    },
+    "Differential": {
+      "zwhe99/DeepMath-103K": 608
+    },
+    "Abstract": {
+      "zwhe99/DeepMath-103K": 590
+    },
+    "Linear": {
+      "zwhe99/DeepMath-103K": 423
+    },
+    "Statistics": {
+      "zwhe99/DeepMath-103K": 421
+    },
+    "algorithmic": {
+      "nvidia/OpenCodeInstruct": 768,
+      "evalplus/mbppplus": 376
+    },
+    "generic": {
+      "nvidia/OpenCodeInstruct": 5495
+    }
+  },
+  "first_400_test_sorted_by_id_by_dataset": {
+    "Integral": {
+      "zwhe99/DeepMath-103K": 400
+    },
+    "Differential": {
+      "zwhe99/DeepMath-103K": 400
+    },
+    "Abstract": {
+      "zwhe99/DeepMath-103K": 400
+    },
+    "Linear": {
+      "zwhe99/DeepMath-103K": 400
+    },
+    "Statistics": {
+      "zwhe99/DeepMath-103K": 400
+    },
+    "algorithmic": {
+      "evalplus/mbppplus": 376,
+      "nvidia/OpenCodeInstruct": 24
+    },
+    "generic": {
+      "nvidia/OpenCodeInstruct": 400
+    }
+  },
+  "min_test_count": 421,
+  "eval_test_ids_equal_hashed_first_400_sorted": true
+}

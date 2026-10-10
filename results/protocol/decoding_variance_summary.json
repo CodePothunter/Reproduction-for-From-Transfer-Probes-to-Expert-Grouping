@@ -1,0 +1,113 @@
+{
+  "note": "Design inputs for choosing k (samples per test item), measured before the candidate comparison on four-expert portfolios of an earlier comparison, each trained from the same warm-up state W for one interval: the decoding split uses one of them, and the paired-difference variance uses two of them. Neither is one of the candidates in this report. Only summary numbers are recorded here; the per-item score files and the script that computed them are not included in this package.",
+  "decoding_split": {
+    "items_per_source": 80,
+    "description": "two independent stochastic decodings of the same checkpoint on the same 80 test items per source; decoding variance = mean((y1-y2)^2)/2; total variance = mean of the two per-run item variances; between-item variance = total - decoding",
+    "per_source": [
+      {
+        "source": "Integral",
+        "two_decoding_disagreement_rate": 0.275,
+        "decoding_variance": 0.1375,
+        "total_variance": 0.252373417721519,
+        "between_item_variance": 0.11487341772151899,
+        "decoding_share": 0.5448275862068965
+      },
+      {
+        "source": "Differential",
+        "two_decoding_disagreement_rate": 0.3375,
+        "decoding_variance": 0.16875,
+        "total_variance": 0.25276898734177217,
+        "between_item_variance": 0.08401898734177216,
+        "decoding_share": 0.6676056338028169
+      },
+      {
+        "source": "Abstract",
+        "two_decoding_disagreement_rate": 0.3125,
+        "decoding_variance": 0.15625,
+        "total_variance": 0.2483386075949367,
+        "between_item_variance": 0.0920886075949367,
+        "decoding_share": 0.6291812679197197
+      },
+      {
+        "source": "Linear",
+        "two_decoding_disagreement_rate": 0.2875,
+        "decoding_variance": 0.14375,
+        "total_variance": 0.2521360759493671,
+        "between_item_variance": 0.10838607594936711,
+        "decoding_share": 0.5701286476310009
+      },
+      {
+        "source": "Statistics",
+        "two_decoding_disagreement_rate": 0.25,
+        "decoding_variance": 0.125,
+        "total_variance": 0.2371835443037975,
+        "between_item_variance": 0.11218354430379751,
+        "decoding_share": 0.5270180120080052
+      },
+      {
+        "source": "algorithmic",
+        "two_decoding_disagreement_rate": 0.2125,
+        "decoding_variance": 0.10625,
+        "total_variance": 0.25023734177215184,
+        "between_item_variance": 0.14398734177215183,
+        "decoding_share": 0.42459690167562447
+      },
+      {
+        "source": "generic",
+        "two_decoding_disagreement_rate": 0.2125,
+        "decoding_variance": 0.10625,
+        "total_variance": 0.24802215189873417,
+        "between_item_variance": 0.14177215189873416,
+        "decoding_share": 0.4283891547049442
+      }
+    ],
+    "samples": {
+      "first": "default CUDA generator state",
+      "second": "CUDA seed 12345"
+    },
+    "items_by_dataset": {
+      "Integral": {
+        "zwhe99/DeepMath-103K": 80
+      },
+      "Differential": {
+        "zwhe99/DeepMath-103K": 80
+      },
+      "Abstract": {
+        "zwhe99/DeepMath-103K": 80
+      },
+      "Linear": {
+        "zwhe99/DeepMath-103K": 80
+      },
+      "Statistics": {
+        "zwhe99/DeepMath-103K": 80
+      },
+      "algorithmic": {
+        "evalplus/mbppplus": 80
+      },
+      "generic": {
+        "nvidia/OpenCodeInstruct": 80
+      }
+    }
+  },
+  "paired_se_extrapolation": {
+    "items_per_source": 400,
+    "description": "SE of the paired difference in equal-weight utility between two portfolios with k samples per item: V(k) = V_obs - 2*decoding_variance*(1 - 1/k) per source, where V_obs is the per-item paired-difference variance measured at k = 1 on 400 items per source between two portfolios of the earlier comparison; SE(k) = sqrt(sum_j V_j(k)/n_j)/7; MDE = 2.8*SE (80% power, two-sided alpha = 0.05)",
+    "by_k": {
+      "1": {
+        "se": 0.009783243642628952,
+        "mde": 0.027393082199361065
+      },
+      "2": {
+        "se": 0.0068964734442291745,
+        "mde": 0.019310125643841686
+      },
+      "4": {
+        "se": 0.004846245027329653,
+        "mde": 0.013569486076523028
+      }
+    }
+  },
+  "delta_min": 0.02,
+  "rule": "smallest k in {1, 2, 4} with MDE <= delta_min (k = 4 if none)",
+  "k_chosen": 2
+}

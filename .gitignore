@@ -1,0 +1,12 @@
+# Pipeline outputs (manifest, probes, checkpoints, evaluations) are written here; keep them out of git.
+runs/
+data/
+# Python and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+# Large model artifacts
+*.pt
+*.safetensors
+*.npz

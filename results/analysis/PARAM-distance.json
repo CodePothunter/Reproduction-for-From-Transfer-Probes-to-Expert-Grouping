@@ -1,0 +1,138 @@
+{
+  "note": "Post hoc diagnostic. L2 distance between expert LoRA parameters (all adapter tensors of the expert, fp32) at the end of the C0 and C3 training intervals, and each run's displacement from the shared warm-up state W. Experts with identical blocks in C0 and C3 measure run-to-run differences from GPU nondeterminism. The three input snapshots are not included in this package.",
+  "inputs_sha256": {
+    "W": "ff8fbbab00e2918ee865bbd7f8a892cf8c1dadecf6b6de19177e258c29db9b9a",
+    "C0": "d5b526e5dcd35e3e066c6d487f1486244f469e81f5c82d4b3f82e393b057accd",
+    "C3": "c3b4eec912f132ceae69db5951ca86f73901e463f1f999532a31c64376a94bb1"
+  },
+  "experts": [
+    {
+      "expert": 0,
+      "identical_blocks_in_C0_and_C3": false,
+      "blocks_C0": [
+        0,
+        0,
+        7,
+        7,
+        0,
+        0,
+        0
+      ],
+      "blocks_C3": [
+        0,
+        0,
+        0,
+        7,
+        7,
+        0,
+        0
+      ],
+      "n_tensors": 228,
+      "dist_C0_C3": 0.9437616312578035,
+      "dist_C0_W": 1.451701575348789,
+      "dist_C3_W": 1.4537764880139596,
+      "ratio_C0_C3_over_C0_W": 0.6501071895792724
+    },
+    {
+      "expert": 1,
+      "identical_blocks_in_C0_and_C3": true,
+      "blocks_C0": [
+        7,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "blocks_C3": [
+        7,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_tensors": 228,
+      "dist_C0_C3": 0.027240918027206438,
+      "dist_C0_W": 1.428081752718549,
+      "dist_C3_W": 1.428234010964836,
+      "ratio_C0_C3_over_C0_W": 0.01907518107793873
+    },
+    {
+      "expert": 2,
+      "identical_blocks_in_C0_and_C3": true,
+      "blocks_C0": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7
+      ],
+      "blocks_C3": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7
+      ],
+      "n_tensors": 228,
+      "dist_C0_C3": 0.02770184494225547,
+      "dist_C0_W": 1.6365448433084762,
+      "dist_C3_W": 1.636574355268402,
+      "ratio_C0_C3_over_C0_W": 0.016927030784107813
+    },
+    {
+      "expert": 3,
+      "identical_blocks_in_C0_and_C3": false,
+      "blocks_C0": [
+        1,
+        1,
+        1,
+        1,
+        8,
+        1,
+        1
+      ],
+      "blocks_C3": [
+        1,
+        1,
+        8,
+        1,
+        1,
+        1,
+        1
+      ],
+      "n_tensors": 228,
+      "dist_C0_C3": 0.8807652991444864,
+      "dist_C0_W": 1.3981055214688618,
+      "dist_C3_W": 1.4008359064430238,
+      "ratio_C0_C3_over_C0_W": 0.6299705462997862
+    }
+  ],
+  "matched_experts": [
+    1,
+    2
+  ],
+  "matched_dist_C0_C3_range": [
+    0.027240918027206438,
+    0.02770184494225547
+  ],
+  "matched_dist_C0_W_range": [
+    1.428081752718549,
+    1.6365448433084762
+  ],
+  "matched_ratio_range": [
+    0.016927030784107813,
+    0.01907518107793873
+  ],
+  "unmatched_dist_C0_C3_range": [
+    0.8807652991444864,
+    0.9437616312578035
+  ]
+}

@@ -1,0 +1,27 @@
+
+==============================================================================
+张量 results/probes/s17_transfer.json
+==============================================================================
+ M       均匀       语义       最优      Δ=最优−语义      语义−均匀  结构是否不同
+ 2   0.4554   0.4884   0.4991      +0.0107    +0.0330  相同 ❌ 无判别力
+     语义 algorithmic+generic | Integral+Differential+Abstract+Linear+Statistics
+     最优 Integral+Differential+Abstract+Linear+Statistics | algorithmic+generic
+ 3   0.4149   0.4423   0.4673      +0.0250    +0.0274  不同 ✅
+     语义 algorithmic | generic | Integral+Differential+Abstract+Linear+Statistics
+     最优 Integral+Differential+Abstract+Linear+Statistics+algorithmic | generic | （空）
+ 4   0.3946   0.4348   0.4426      +0.0078    +0.0402  不同 ✅
+     语义 Abstract+Linear | Integral+Differential | algorithmic+generic | Statistics
+     最优 Integral+Abstract+Linear+Statistics+algorithmic | Differential | generic | （空）
+ 5   0.3825   0.4220   0.4259      +0.0039    +0.0395  不同 ✅
+     语义 Integral+Differential | algorithmic+generic | Abstract | Linear | Statistics
+     最优 Integral | Differential+generic | Abstract | Linear+algorithmic | Statistics
+
+==============================================================================
+自助重采样：Δ_M > 0 的比例（200 次）
+==============================================================================
+
+results/probes/s17_transfer.json
+  M=2  Δ>0 比例  98.5%   中位 +0.0192   5–95% +0.0031 … +0.0388
+  M=3  Δ>0 比例 100.0%   中位 +0.0253   5–95% +0.0092 … +0.0411
+  M=4  Δ>0 比例 100.0%   中位 +0.0127   5–95% +0.0042 … +0.0217
+  M=5  Δ>0 比例 100.0%   中位 +0.0066   5–95% +0.0021 … +0.0129

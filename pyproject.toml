@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lwts"
+version = "0.1.0"
+description = "Transfer probes and expert grouping under LoRA post-training: experiment library and pipeline for the evidence package"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "datasets>=2.14",
+    "transformers>=5.16.1",
+    # 判分器不是可选件：判分口径写错不会报错，只会把 competence 静默抹平。
+    # 版本钉死到 DeepMath 官方环境用的那一版，判分结果才可复现。
+    "math-verify[antlr4-11-0]==0.7.0",
+    "numpy>=1.24",                       # 检查点的 npz 索引文件
+]
+
+[project.optional-dependencies]
+train = [
+    "peft>=0.20.0",
+    "torch>=2.14.0",
+]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu126"
+
+[tool.setuptools.packages.find]
+include = ["lwts*"]
